@@ -8,7 +8,7 @@ body {
     width: 30rem;
     height: 50rem;
     max-width: 100vw;
-    max-height: 100dvh;
+    max-height: 80dvh;
     margin: auto;
     background-color: black;
     border-radius: 25px;
@@ -27,12 +27,24 @@ body {
     top: -35rem
 }
 
+.reset-button.button {
+    background-color: grey;
+    position: fixed;
+    inset: 0px;
+    max-width: 9vw;
+    margin: auto;
+    border-radius: 10px;
+    top: -15rem;
+    right: 19rem;
+
+}
+
 .number-buttons-container {
     display: grid;
     row-gap: 30px;
-    grid-template-columns: 100px 100px 100px;
-    padding-top: 25rem;
-    padding-left: 5rem;
+    grid-template-columns: 100px 100px 100px 100px;
+    padding-top: 19rem;
+    padding-left: 3rem;
 }
 
 .button {
@@ -43,4 +55,32 @@ body {
     text-align: center;
     font-size: 50px;
     font-family: system-ui;
+}
+
+.button:hover {
+    background-color: rgb(183, 102, 2);
+}
+
+button {
+    font-size: 50px;
+    font-family: system-ui;
+    border: none;
+    background: none;
+}
+
+/* need to find a better way of doing this */
+#equal {
+    width: 180px;
+}
+
+#empty {
+    background: none;
+}
+
+.operation {
+    background-color: grey;
+}
+
+.operation:hover {
+    background-color: rgb(83, 80, 80);
 }
