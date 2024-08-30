@@ -66,6 +66,7 @@ button {
     font-family: system-ui;
     border: none;
     background: none;
+    width: 5rem;
 }
 
 /* need to find a better way of doing this */
