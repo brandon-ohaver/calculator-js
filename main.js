@@ -1,4 +1,5 @@
 let btns = document.querySelectorAll("button");
+let screen = document.getElementById("screen");
 let accumulator = 0
 let current = ""
 let operation = ""
@@ -12,9 +13,11 @@ btns.forEach(btn => {
 		} else if (!isNaN(this.textContent)) {
 			current = current + this.textContent;
 			console.log(current);
+			screen.textContent = current;
 		} else if (this.textContent === "AC") {
 			current = "";
 			accumulator = 0;
+			screen.textContent = 0
 			console.log("accumulator and current cleared")
 		} 
 

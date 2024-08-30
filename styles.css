@@ -24,7 +24,13 @@ body {
     margin: auto;
     background-color: white;
     border-radius: 10px;
-    top: -35rem
+    top: -35rem;
+    text-align: right;
+    font-size: 50px;
+    padding-top: 20px;
+    padding-right: 20px;
+    font-family:'Orbitron';
+    
 }
 
 .reset-button.button {
@@ -36,7 +42,7 @@ body {
     border-radius: 10px;
     top: -15rem;
     right: 19rem;
-
+    font-family: system-ui;
 }
 
 .number-buttons-container {
@@ -63,7 +69,6 @@ body {
 
 button {
     font-size: 50px;
-    font-family: system-ui;
     border: none;
     background: none;
     width: 5rem;
@@ -85,3 +90,4 @@ button {
 .operation:hover {
     background-color: rgb(83, 80, 80);
 }
+
